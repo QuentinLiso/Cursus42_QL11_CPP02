@@ -6,13 +6,13 @@
 /*   By: qliso <qliso@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:26:48 by qliso             #+#    #+#             */
-/*   Updated: 2025/03/12 16:07:26 by qliso            ###   ########.fr       */
+/*   Updated: 2025/04/08 12:36:07 by qliso            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Point.hpp"
 
-Point::Point(void) : _x(Fixed(0)), _y(Fixed(0))
+Point::Point(void) : _x(Fixed(0.0f)), _y(Fixed(0.0f))
 {
     // std::cout << "Point : Default constructor called" << std::endl;
 }

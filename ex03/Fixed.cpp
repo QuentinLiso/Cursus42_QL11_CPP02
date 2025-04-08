@@ -6,7 +6,7 @@
 /*   By: qliso <qliso@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 13:16:32 by qliso             #+#    #+#             */
-/*   Updated: 2025/03/12 16:06:07 by qliso            ###   ########.fr       */
+/*   Updated: 2025/04/06 16:34:15 by qliso            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ Fixed::~Fixed(void)
 Fixed & Fixed::operator=(Fixed const &rhs)
 {
     // std::cout << "Fixed : Copy assignment operator called" << std::endl;
-    this->_n = rhs.getRawBits();
+    if (this != &rhs)
+        this->_n = rhs.getRawBits();
     return (*this);
 }
 
